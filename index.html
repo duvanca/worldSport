@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Sport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagenes/nav/logo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--  Bootstrap CSS -->
+</head>
+<body>
+
+  <div class="container">
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark  navbar-custom nav-underline ">
+      <div class="container-fluid">
+          
+          <a class="navbar-brand" href="#">
+            <img src="/imagenes/nav/logo (2).png" alt="World Sport Logo" width="100" height="100" class="d-inline-block align-middle">
+            WorldSport</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalCarrito" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-danger" id="cartCount">0</span>
+                    </a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- carousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/imagenes/carousel/cr=t_0,w_100.webp" class="d-block w-100" alt="Slide 1">
+        <div class="text-carousel">
+          <h2 class="custom-caption-text"><span>Explora lo mejor del deporte con</span> WorldSport</h2>
+          
+           </p>
+          </div>
+          <div class="carousel-caption custom-caption">
+            WorldSport
+          </div>
+        
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/carousel/zaptilla.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption custom-caption">
+          WorldSport
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/carousel/ropa.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption custom-caption">
+          WorldSport
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  <h2 class="text-aparecer"><span>Explora lo mejor del deporte con</span> WorldSport</h2>
+
+  <!-- cards para productos -->
+  
+  <div class="container mt-5">
+    <h2 class="product_title">Productos</h2>
+    <div class="row">
+      <!-- Primera tarjeta -->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card custom-card">
+          <img src="/imagenes/cards/ropa-deportiva-mujer.jpg" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Mujeres</h5>
+            <p class="card-text">t amet consectetur adipisicing elit. Laborum enim culpa officia perferendis temporibus. Atque </p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Segunda tarjeta -->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card custom-card">
+          <img src="/imagenes/cards/ropahombre.jpg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Hombres</h5>
+            <p class="card-text">t amet consectetur adipisicing elit. Laborum enim culpa officia perferendis temporibus. Atque.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Tercera tarjeta -->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card custom-card">
+          <img src="/imagenes/cards/accesorios.jpg" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Accesorios</h5>
+            <p class="card-text">t amet consectetur adipisicing elit. Laborum enim culpa officia perferendis temporibus. Atque</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5"></div>
+    <h2 class="text-center">Productos Más Vendidos</h2>
+    <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="/imagenes/mas_vendidos/blusa.png" class="card-img-top" alt="Producto 1" id ="imgProducto1">
+                <div class="card-body">
+                    <h5 class="card-title"id="nombreProducto1">Producto 1</h5>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <p class="card-text" id="precioProducto1"><strong>Precio: $20.00</strong></p>
+                    <p class="card-text"><strong>Tallas disponibles:</strong></p>
+                    <div class="btn-group" role="group" aria-label="Tallas">
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('S')">S</button>
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('M')">M</button>
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('L')">L</button>
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('XL')">XL</button>
+                    </div>
+             
+                    <a href="#" onclick="agregarAlCarrito(1)" class="btn btn-primary"  >Agregar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="/imagenes/mas_vendidos/camisahombre.png" class="card-img-top" alt="Producto 2"id ="imgProducto2">
+                <div class="card-body">
+                    <h5 class="card-title" id="nombreProducto2">Producto 2</h5>
+                    <p class="card-text">Descripción breve del producto 2.</p>
+                    <p class="card-text" id="precioProducto2"><strong>Precio: $30.00</strong></p>
+                    <p class="card-text"><strong>Tallas disponibles:</strong></p>
+                    <div class="btn-group" role="group" aria-label="Tallas">
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('S')">S</button>
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('M')">M</button>
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('L')">L</button>
+                        <button type="button" class="btn-size" onclick="seleccionarTalla('XL')">XL</button>
+                    </div>
+                    <a href="#" onclick="agregarAlCarrito(2)" class="btn btn-primary"  >Agregar <i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="/imagenes/mas_vendidos/zapatilla.png" class="card-img-top" alt="Producto 3" id ="imgProducto3">
+                <div class="card-body">
+                    <h5 class="card-title" id ="nombreProducto3">Producto 3</h5>
+                    <p class="card-text">Descripción breve del producto 3.</p>
+                    <p class="card-text" id="precioProducto3"><strong>Precio: $25.00</strong></p>
+                    <p class="card-text"><strong>Tallas disponibles:</strong></p>
+            <div class="btn-group" role="group" aria-label="Tallas">
+                <button type="button" class="btn-size" onclick="seleccionarTalla('34')">34</button>
+                <button type="button" class="btn-size" onclick="seleccionarTalla('36')">36</button>
+                <button type="button" class="btn-size" onclick="seleccionarTalla('39')">39</button>
+                <button type="button" class="btn-size" onclick="seleccionarTalla('40')">40</button>
+            </div>
+                    <a href="#" onclick="agregarAlCarrito(3)" class="btn btn-primary"  >Agregar <i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para mostrar el carrito -->
+<div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="listaCarritoModal">
+          <!-- Aquí se mostrarán los productos del carrito -->
+        </ul>
+        <p>Total: $<span id="totalCarritoModal">0.00</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Pagar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- botones-flotantes -->
+<div class="botones-flotantes">
+  <a href="https://wa.me/tu_numero" class="boton-flotante" target="_blank">
+      <img src="/imagenes/iconos/wssp.webp" alt="WhatsApp" />
+  </a>
+  <a href="https://facebook.com/tu_pagina" class="boton-flotante" target="_blank">
+      <img src="/imagenes/iconos/instagram.webp" alt="Facebook" />
+  </a>
+  <a href="https://twitter.com/tu_cuenta" class="boton-flotante" target="_blank">
+    <img src="/imagenes/iconos/facebook.webp" alt="Twitter" />
+</a>
+<a href="https://twitter.com/tu_cuenta" class="boton-flotante" target="_blank">
+  <img src="/imagenes/iconos/tiktok.webp" alt="Twitter" />
+</a>
+  
+</div>
+  </div>
+
+  
+    
+    <!--  Bootstrap JS y sus dependencias -->
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
